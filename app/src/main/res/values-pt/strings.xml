@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quizdroid</string>
+    <string name="enter_name_label">Entre com o seu apelido</string>
+    <string name="proceed">Prosseguir</string>
+    <string name="send_answer">Enviar resposta</string>
+    <string name="error_sending_answer">Ocorreu um erro enviando sua resposta</string>
+    <string name="loading">Carregando…</string>
+    <string name="sending">Enviando…</string>
+    <string name="success_sending">Sucesso enviando a resposta</string>
+    <string name="correct_answer">Sua resposta está correta!</string>
+    <string name="wrong_answer">Sua resposta está errada!</string>
+    <string name="next_question">Próxima pergunta</string>
+    <string name="show_results">Mostrar resultados</string>
+    <string name="error_loading_questions">Erro carregando as questões, toque para tentar novamente.</string>
+    <string name="result_congratulations">Parabéns %1$s, você terminou o Quiz! Respostas corretas: %2$d de %3$d.</string>
+    <string name="play_again">Jogar novamente</string>
+</resources>

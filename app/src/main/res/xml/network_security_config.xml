@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">34.73.190.231</domain>
+        <domain includeSubdomains="true">34.73.190.231:8080</domain>
+        <domain includeSubdomains="true">http://34.73.190.231</domain>
+        <domain includeSubdomains="true">http://34.73.190.231:8080</domain>
+    </domain-config>
+</network-security-config>

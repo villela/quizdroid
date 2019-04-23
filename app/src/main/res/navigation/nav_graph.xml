@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph" app:startDestination="@id/nameFragment">
+
+    <fragment android:id="@+id/nameFragment"
+              android:name="com.matheusvillela.quizandroid.ui.name.NameFragment"
+              android:label="NameFragment">
+        <action android:id="@+id/actionNameFragmentToQuestionFragment"
+                app:destination="@id/questionFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:popUpTo="@+id/nav_graph"
+                app:popUpToInclusive="true"
+                app:launchSingleTop="false"/>
+    </fragment>
+    <fragment android:id="@+id/questionFragment"
+              android:name="com.matheusvillela.quizandroid.ui.question.QuestionFragment"
+              android:label="QuestionFragment">
+        <argument
+                android:name="nickname"
+                app:argType="string"
+                app:nullable="false"/>
+        <action android:id="@+id/questionFragmentToResultsFragment"
+                app:destination="@id/resultsFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:popUpTo="@+id/nav_graph"
+                app:popUpToInclusive="true"
+                app:launchSingleTop="false"/>
+    </fragment>
+    <fragment android:id="@+id/resultsFragment"
+              android:name="com.matheusvillela.quizandroid.ui.results.ResultsFragment"
+              android:label="QuestionFragment">
+        <argument
+                android:name="nickname"
+                app:argType="string"
+                app:nullable="false"/>
+        <argument
+                android:name="correctAnswers"
+                app:argType="integer"
+                app:nullable="false"/>
+        <action android:id="@+id/resultsFragmentToQuestionFragment"
+                app:destination="@id/questionFragment"
+                app:enterAnim="@anim/slide_out_left"
+                app:exitAnim="@anim/slide_in_right"
+                app:popEnterAnim="@anim/slide_out_right"
+                app:popExitAnim="@anim/slide_in_left"
+                app:popUpTo="@+id/nav_graph"
+                app:popUpToInclusive="true"
+                app:launchSingleTop="false"/>
+    </fragment>
+</navigation>
